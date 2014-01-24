@@ -209,6 +209,8 @@ the \"Gen RGB\" column in noctilux-definitions.el to improve them further."
              (minibuffer-prompt ((t (,@fmt-bold ,@fg-cyan)))) ; Question
              (mode-line  ; StatusLine
               ((t (,@fg-base02,@bg-base02 ,@fmt-revbb :box nil))))
+             (mode-line-buffer-id
+              ((t (,@fg-base02,@bg-base01))))
              ;;(mode-line-inactive ; StatusLineNC
              ;; ((t (,@fg-base00 ,@bg-base02 ,@fmt-revbb :box nil))))
              (region ((t (,@fg-base01 ,@bg-base03 ,@fmt-revbb)))) ; Visual
