@@ -20,3 +20,8 @@ Prerequisites
 -------------
 
 You'll at least need Emacs 24 for deftheme color-theme system. Used and tested with 24.3 and an sRGB graphical Emacs setup.
+
+Mod
+------
+
+This is a mod.
