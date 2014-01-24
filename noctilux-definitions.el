@@ -211,6 +211,8 @@ the \"Gen RGB\" column in noctilux-definitions.el to improve them further."
               ((t (,@fg-base02,@bg-base02 ,@fmt-revbb :box nil))))
              (mode-line-buffer-id
               ((t (,@fg-base02,@bg-base01))))
+             (mode-line-highlight
+              ((t (,@bg-cyan))))
              ;;(mode-line-inactive ; StatusLineNC
              ;; ((t (,@fg-base00 ,@bg-base02 ,@fmt-revbb :box nil))))
              (region ((t (,@fg-base01 ,@bg-base03 ,@fmt-revbb)))) ; Visual
@@ -338,7 +340,7 @@ the \"Gen RGB\" column in noctilux-definitions.el to improve them further."
              (org-cancelled-kwd-face ((t (,@fg-green ,@bg-base03))))
              (org-delegated-kwd-face ((t (,@fg-cyan ,@bg-base03))))
              ;; powerline
-             (powerline-active1 ((t (,@fg-base04 ,@bg-base04))))
+             (powerline-active1 ((t (,@fg-base04))))
              (powerline-active2 ((t (,@fg-base05 ,@bg-base05))))
              ;;(powerline-active2 ((t (,@fg-base1 ,@bg-base03))))
              ;; table
