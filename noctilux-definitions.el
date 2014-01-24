@@ -55,7 +55,8 @@ the \"Gen RGB\" column in noctilux-definitions.el to improve them further."
 ;;        that Emacs seems to dislike
 (defvar noctilux-colors           ; ANSI(Noctilux terminal)
   ;; name     sRGB      Gen RGB   256       16              8
-  '((base03  "#202020" "#202020" "#202020" "brightblack"   "black")
+  '((base04  "#484848" "#484848" "#484848" "gray"          "gray")
+    (base03  "#202020" "#202020" "#202020" "brightblack"   "black")
     (base02  "#292929" "#292929" "#292929" "black"         "black")
     (base01  "#5f5f5f" "#5f5f5f" "#5f5f5f" "brightgreen"   "green")
     (base00  "#999999" "#999999" "#999999" "brightyellow"  "yellow")
@@ -91,7 +92,8 @@ the \"Gen RGB\" column in noctilux-definitions.el to improve them further."
                              (8  5)
                              (otherwise 3)))))
              (nth index (assoc name noctilux-colors)))))
-    (let ((base03      (find-color 'base03))
+    (let ((base04      (find-color 'base04))
+          (base03      (find-color 'base03))
           (base02      (find-color 'base02))
           (base01      (find-color 'base01))
           (base00      (find-color 'base00))
@@ -127,6 +129,7 @@ the \"Gen RGB\" column in noctilux-definitions.el to improve them further."
         ;;       using default background and foreground colors, expecting the
         ;;       user to have the right colors set for them.
         (let ((bg-back   `(:background ,back))
+              (bg-base04 `(:background ,base04))
               (bg-base03 `(:background ,base03))
               (bg-base02 `(:background ,base02))
               (bg-base01 `(:background ,base01))
@@ -145,6 +148,7 @@ the \"Gen RGB\" column in noctilux-definitions.el to improve them further."
               (bg-cyan `(:background ,cyan))
               (bg-white `(:background ,white))
 
+              (fg-base04 `(:foreground ,base04))
               (fg-base03 `(:foreground ,base03))
               (fg-base02 `(:foreground ,base02))
               (fg-base01 `(:foreground ,base01))
@@ -328,8 +332,8 @@ the \"Gen RGB\" column in noctilux-definitions.el to improve them further."
              (org-cancelled-kwd-face ((t (,@fg-green ,@bg-base03))))
              (org-delegated-kwd-face ((t (,@fg-cyan ,@bg-base03))))
              ;; powerline
-             (powerline-active1 ((t (,@fg-base01 ,@fg-base01))))
-             ;;(powerline-active2 ((t (,@fg-base0 ,@fg-base01))))
+             (powerline-active1 ((t (,@fg-base04 ,@bg-base04))))
+             ;;(powerline-active2 ((t (,@fg-base01 ,@bg-base03))))
              ;; table
              (table-cell ((t (,@fmt-none ,@fg-base0 ,@bg-back))))
              ;; outline - pandocBlockQuoteLeader*
