@@ -1,14 +1,21 @@
 Noctilux
-========
+============
 
-A dark color theme for Emacs 24+ (using deftheme), inspired by the default dark theme in [Light Table](http://www.lighttable.com/) 0.4.0. This color theme is based off the definitions and format in sellout's awesome [emacs-color-theme-solarized](https://github.com/sellout/emacs-color-theme-solarized), providing support for a *lot* of modes.
+A fork of the Emacs 24+ theme [noctilux](https://github.com/stafu/noctilux-theme) with some color tweaks.
 
-This is still pretty rough around the edges; I think some color tweaks are still needed, and pull requests are definitely welcome.
+Differences from the original repo
+------------------------------------
 
-Screenshot
-==========
+The `mode-line` color is more muted, with some info only visible when you hover over them. 
 
-![Showing ido and some syntax highlighting](http://i.imgur.com/M3DPhCh.png)
+This is to make the theme more palatable for use with [powerline](https://github.com/milkypostman/powerline).
+
+NOTE: Lots of rough edges. There isn't even an inactive mode-line color set yet.
+
+Screenshots
+============
+
+![Mod with powerline-center-theme](screenshot.png)
 
 Setup
 -----
@@ -21,7 +28,3 @@ Prerequisites
 
 You'll at least need Emacs 24 for deftheme color-theme system. Used and tested with 24.3 and an sRGB graphical Emacs setup.
 
-Mod
-------
-
-This is a mod.
