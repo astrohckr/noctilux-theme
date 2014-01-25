@@ -208,15 +208,15 @@ the \"Gen RGB\" column in noctilux-definitions.el to improve them further."
              (menu ((t (,@fg-base0 ,@bg-base02))))
              (minibuffer-prompt ((t (,@fmt-bold ,@fg-cyan)))) ; Question
              (mode-line  ; StatusLine
-              ((t (,@fg-base02,@bg-base02 ,@fmt-revbb :box nil))))
+              ((t (,@fg-base02 ,@bg-base02 ,@fmt-revbb :box nil))))
              (mode-line-buffer-id
-              ((t (,@fg-base02,@bg-base01))))
+              ((t (,@fg-base02 ,@bg-base01))))
              (mode-line-misc-info
               ((t (,@bg-red))))
              (mode-line-highlight
               ((t (,@bg-cyan))))
-             ;;(mode-line-inactive ; StatusLineNC
-             ;; ((t (,@fg-base00 ,@bg-base02 ,@fmt-revbb :box nil))))
+             (mode-line-inactive ; StatusLineNC
+              ((t (,@fg-base02 ,@bg-base02 ,@fmt-revbb :box nil))))
              (region ((t (,@fg-base01 ,@bg-base03 ,@fmt-revbb)))) ; Visual
              (secondary-selection ((t (,@bg-base02))))
              (shadow ((t (,@fg-base01))))
@@ -343,8 +343,9 @@ the \"Gen RGB\" column in noctilux-definitions.el to improve them further."
              (org-delegated-kwd-face ((t (,@fg-cyan ,@bg-base03))))
              ;; powerline
              (powerline-active1 ((t (,@fg-base04 ,@bg-base04))))
-             ;;(powerline-active2 ((t (,@fg-base05))))
              (powerline-active2 ((t (,@fg-base05 ,@bg-base04))))
+             (powerline-inactive1 ((t (,@fg-base02 ,@bg-base02))))
+             (powerline-inactive2 ((t (,@fg-base02 ,@bg-base02))))
              ;; table
              (table-cell ((t (,@fmt-none ,@fg-base0 ,@bg-back))))
              ;; outline - pandocBlockQuoteLeader*
